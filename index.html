@@ -4,16 +4,13 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Cadastro de Cliente — SERVIX</title>
-<meta name="description" content="Cadastre-se como cliente na SERVIX e solicite serviços." />
 <link rel="icon" type="image/png" href="https://i.postimg.cc/QxPKh1kx/83fb69c1-108b-4dad-8e00-5b7ead62e1db.png" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --blue-600:#1D4ED8;--blue-700:#1D3F9E;--blue-500:#2E6BF0;--blue-50:#EEF3FF;--blue-100:#DCE7FF;
+  --blue-600:#1D4ED8;--blue-700:#1D3F9E;--blue-500:#2E6BF0;--blue-50:#EEF3FF;
   --green-500:#22C55E;--green-600:#16A34A;--green-700:#15803D;--green-100:#DCFCE7;--green-50:#F0FDF4;
   --red-500:#EF4444;--red-600:#DC2626;--red-700:#B91C1C;--red-50:#FEF2F2;
   --yellow-500:#FACC15;--ink-900:#0B1220;--ink-800:#1E293B;--ink-700:#334155;
@@ -130,7 +127,6 @@ small.err{color:var(--red-600);font-size:.78rem;font-weight:600;display:none}
       </div>
 
       <h2 class="section-title"><span class="num">2</span> Dados pessoais</h2>
-
       <div class="field">
         <label>Nome completo <span class="req">*</span></label>
         <input type="text" name="nome" required />
@@ -237,7 +233,7 @@ small.err{color:var(--red-600);font-size:.78rem;font-weight:600;display:none}
 </footer>
 
 <script>
-/* ========== CONFIG ========== */
+/* ============ CONFIG — URL CORRETA ============ */
 const API_URL = 'https://servix-api-0qe6.onrender.com';
 const ENDPOINT = '/api/clientes/cadastro';
 
